@@ -3,3 +3,677 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Notes
+
+Fonts:
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+Colors:
+
+Orange- #FAA46B
+Blue - #A8C0F5
+Dark Grey - #252525
+Blue- #a6bff4
+
+*/
+
+/* CSS Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img { max-width: 100%; }
+
+/*  Temporary Styles */
+
+html, 
+body {
+    border: none;
+    color:#252525;
+} 
+ 
+/* Optional padding to override default gridlex columns */ 
+[class*=col] { padding: 0; }
+
+[class*=grid] {
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------------UNIVERSAL STYLES & UTILITY CLASSES-------------------------------------*/
+
+/* Padding Utility Classes ---------------------- */ 
+
+.padded { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+.padded-05 { padding: 0.5rem; }
+.padded-1 { padding: 1rem; }
+.padded-2 { padding: 2rem; }
+.padded-t { padding-top: 5%; }
+.padded-b { padding-bottom: 5%; }
+.padded-l { padding-left: 5%; }
+.padded-r { padding-bottom: 5%; }
+.paddedvideo {
+            padding-left: 5%;
+            padding-top: 5%;
+            padding-right:5%;   }
+
+.padded-tb { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-bottom: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-bottom: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-bottom: 0; }
+
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+.tall-40 {min-height:40vh;}
+.tall-50 {min-height:50vh;}
+.tall-60 {min-height:60vh;}
+.tall-70 {min-height:70vh;}
+.tall-80 {min-height:80vh;}
+.tall-90 {min-height:90vh;}
+.tall-100 {min-height:100vh;}
+
+/*backgrounds & Images --------------------*/
+
+.bg-dark {
+  background-color: #FAA46B;
+  color:white;
+ }
+.bg-featured {background-color:#A8C0F5;
+          color: white;}
+
+/* Image styles */
+
+.bg-image {
+            background-color: rgb(240,240,240);
+            background-image: url('images/clouds.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+}
+
+/* Aspect Ratio */
+.portrait-tall {padding-bottom: 175%;}
+.portrait {padding-bottom: 125%;}
+.square {padding-bottom: 100%;}
+.landscape { padding-bottom: 66%;}
+.landscape-wide {padding-bottom: 56%;}
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+.bg-pos-t-l { background-position: left top; }
+.bg-pos-b-r { background-position: right bottom; }
+
+/* Header Nav styles----------------------------------- */
+
+header {
+  padding: 1% 5%;
+}
+
+nav a {display: inline-block;
+        padding: 1rem;
+        border:none;}
+
+/* Footer --------------------------------------------*/
+
+.bg-footer {background-color:#FAA46B;}
+
+.inline a {
+        display:inline-block;
+        padding: 0.5rem;
+  }
+
+/* ------------------------Universal Typography styles ------------------------ */
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    color: #363636;
+}
+
+h1{
+    color: #FAA46B;
+    font-family: 'Oswald', sans-serif;   }
+
+h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-family: 'Oswald', sans-serif; 
+  
+}
+
+h2 {font-size: 2.5rem;
+    margin-bottom:1rem; }
+h3 {font-size: 1.8rem;}
+h4 {font-size: 1.5rem;}
+
+p {
+  line-height: 1.4; 
+  margin-bottom: 1rem;
+}
+
+/*last child*/
+h2:last-child, 
+h3:last-child, 
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+margin-bottom: 0;}
+
+a{
+    color:inherit;
+    text-decoration:none;
+    display: inline-block;
+}
+
+a:hover{ color: #FAA46B; }
+ 
+.left    { text-align: left; }
+.right   { text-align: right; }
+.center  { text-align: center; }
+
+
+.light-text   {color:white;}
+.dark-text    {color:#252525;}
+.featured-text{color: #a6bff4;}
+.orange-text  {color: #FEA66F;}
+
+.font-bold       {font-weight: 600;}
+.font-light      {font-weight: 200;}
+.font-normal     {font-weight:normal;}
+.font-extra-bold {font-weight: 800;}
+.big-text        {font-size: 4rem;}
+.med-text        {font-size: 2rem;
+                  line-height:1.4;}
+.small-text{ 
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;}
+
+.xl-text {
+        font-size: 5.8rem;
+        font-weight: 500;
+}
+
+.tiny-text {font-size: 0.4rem;}
+
+.sig-text {font-family:'Dancing Script', cursive;
+          font-size: 3rem;}
+
+.subtitle { 
+        font-size: 1rem;
+        color: rgb(120,120,125);
+}
+
+.emphasis { font-weight: 600;
+            font-size: 1.3rem;}
+
+/* Main home page Banner styles ---------------- */
+
+.header-banner {background-image:url('/images/annmarie-bike.JPG');
+    background-size: cover; 
+  	background-position:center; 
+  	background-repeat: no-repeat;}
+    
+
+.main-header-text {
+    font-size: 1.5rem;
+    line-height:1.4;
+    font-weight: 200;
+    color: white;}
+
+.main-header-name { 
+    font-size: 4.3rem;
+    font-weight: 400;
+}
+
+
+/*icon Section---------------------------*/
+
+.icon {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;}
+
+/* Testimonial Section ---------------------*/
+
+hr {
+    border: none;
+    border-bottom: 3px solid;
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial{
+    width: 100%;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 100%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+
+/* Images */
+
+.bg-marble {background-image: url('/images/marble.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: right;}
+
+.bg-computer {background-image: url('/images/computer.jpg');
+                                background-position:center;}
+    
+.bg-orangetop {background-image: url('/images/AnnMarie-32.JPG');}
+    
+.bg-whitecomputer {background-image: url('/images/whitecomputer.jpg');}
+    
+.bg-annmarie2 { background-image: url('/images/AnnMarie-2.JPG')}
+    
+.bg-annmarie3 {background-image: url('/images/AnnMarie-3.JPG');}
+    
+.bg-annmarie4 {background-image: url('/images/AnnMarie-4.JPG');}
+    
+
+.bg-annmarie5 {background-image: url('/images/AnnMarie-5.JPG');} 
+
+.bg-annmarie6 {background-image: url('/images/AnnMarie-6.JPG');}                                
+        
+.bg-annmarie8 {
+            background-image: url('/images/AnnMarie-8.JPG');
+            background-position:right;}    
+
+.bg-annmarie9 {background-image: url('/images/AnnMarie-9.JPG');}                                
+.bg-annmarie10 {background-image: url('/images/AnnMarie-10.JPG');}
+
+.annmarie-11 {background-image: url('/images/AnnMarie-11.jpg');}
+
+
+.bg-abu {background-image: url('/images/ABU.png');}   
+
+.bg-clouds{
+            background-image: url('/images/clouds.JPG');
+            background-position:center;
+                }              
+
+.bg-journal{
+           background-image: url('/images/journalentry.jpg');
+           background-position:center;
+                        }   
+                        
+.bg-journalportrait {background-image: url('/images/journalportrait.jpg');}  
+
+.bg-workspace {background-image: url('/images/workspace.jpg');} 
+
+.bg-insta {background-image: url('/images/instaplaceholder.png');}
+
+.bg-magazine {background-image: url('/images/magazine.jpg');}
+
+.bg-computer-work {background-image: url('/images/computer-work.jpg')
+ ;}
+
+
+.shape-teardrop {
+  border-radius: 20rem;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.shape-window {
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem; 
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Banner styles -----------------------------------*/
+
+.banner,
+.banner-with-header {
+  background-image: url('/images/opaqueoranges.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+}
+.fixed {
+  background-attachment: fixed;
+}
+
+.banner-sm {
+  background-image: url('/images/opaqueoranges.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 30vh;
+}
+
+
+/*Buttons -----------------------------------*/
+
+.button {
+        border: 4px solid #FAA46B;
+        border-radius: 1rem;
+        width: 220px;
+        color:#A8C0F5;
+        background-color: whitesmoke;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: 'Oswald', sans-serif; 
+        transition: 0.2s;
+        display:inline-block;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        text-align:center;
+        letter-spacing: 1px;
+
+}
+
+.coaching-buton {
+    border: 4px solid #FAA46B;
+    color:#A8C0F5;
+    background-color: whitesmoke;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*.button {
+    
+width: 130px;
+height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    color:#A8C0F5;
+    margin: 2rem;
+    padding: 10px 25px;
+    font-size: 1.7rem;
+    font-family: 'Oswald', sans-serif;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+}
+/*
+
+       
+              
+/* this is a line element */
+  hr{
+  border: none;
+  border-bottom: 3px solid;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.profile-small {
+  max-width: 10rem;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form -----------------------------------*/
+
+input, textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.4rem;
+  padding: 1rem; 
+  font-family: inherit;
+  font-size: 0.9rem;
+  border:2px solid transparent;
+}
+
+
+input:focus,
+textarea:focus{
+  border: 2px solid #FAA46B;
+  outline:none;
+}
+
+.contact-button {
+  padding: 0.5rem 2rem;
+  font-family: inherit;
+  color: #FAA46B;
+  font-weight: bold;
+  background-color:white;
+  appearance: none;
+  border: 2px solid #A8C0F5; 
+}
+
+.contact-button:hover{
+  border: 2px solid #FAA46B;
+}
+
+input,
+textarea {
+  border-style: solid;
+  border: 2px solid rgb(200, 200, 205);
+  padding: 0.8em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #FAA46B;
+  /* featured color */
+}
+
+/*--Work with me*/
+
+textarea {
+  min-height: 7em;
+}
+
+input[type="submit"] {
+  width: auto;
+  display: block;
+}
+
+form [class*=col-] {
+  padding: 5px;
+}
+
+.email-signup input {
+  width: 30%;
+  display: inline-block;
+  max-width: 250px;
+  margin-top:1rem;
+}
+
+.email-signup .button-solid {
+  
+  padding: 0.8em;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #A8C0F5;
+  font-family: 'Montserrat', sans-serif;
+}
+.button-solid {
+  background-color:white;
+  border: 2px solid #FAA46B;
+  font-weight:600;
+  letter-spacing: 1px;
+  
+}
+form .button {
+  width:100%;
+}
+  @media(max-width:768px) {
+   .email-signup input {
+     width: 100%;
+     max-width: 100%;
+   }
+ }
+
+/* ----- Hamburger Menu */
+.mobile-menu {
+  position: fixed; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index:1;
+}
+
+.mobile-menu a{
+  display:block;
+  padding: 5vh 5%;
+  font-weight: normal;
+  font-size: 1.5rem; 
+}
+
+.mobile-menu a:hover{
+  color:#363636;
+}
+
+.hamburger-button {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger-button i {
+  font-size: 2.2rem;
+  margin-bottom:0;
+}
+
+.hamburger-button.active{color:white;}
+
+/* ------------------------ General CSS Responsive Styles (Apply everywhere unless overridden) ------------------------ */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+
+  body {border: 2px solid green; padding:0.5rem;}
+
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+
+  body {border: 2px solid blue;}
+
+  .show-sm { display: block; }
+  .hide-sm { display: none;  }
+	 
+  .sm-center { text-align: center; }
+  .sm-left { text-align: left; }
+  .sm-right { text-align: right; }
+
+  .sm-padded { padding: 5%; }
+  .sm-padded-1 { padding: 1rem; }
+  .sm-padded-05 { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-l-0 { margin-left: 0; }
+  .sm-margin-r-0 { margin-right: 0; }
+
+  .main-header-name {
+    font-size: 9vw;
+    text-align: center;
+    line-height: 1.1 
+      }
+  .main-header-text {
+    font-size: 3vw; 
+    text-align:center;
+    margin-top: 1rem;
+  }
+
+}
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+
+  html {font-size: 14px}
+
+  body {border: 2px solid lightblue;}
+
+  .show-xs { display: block; }
+  .hide-xs { display: none;  }
+}
+
+/* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+
+  [class*=grid] .xxs-stack {
+      flex-basis: 100%;
+      max-width: 100%;
+  }
+} 
