@@ -1,9 +1,17 @@
 ---
 layout: default
 title: Homepage
+offers:
+ - heading: 1-on-1 
+   description: 1 on 1 coaching with me! lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore totam dolores. Neque labore totam dolores. Neque labore totam dolores.
+ - heading: ABU
+   description: Join ADHD Business University and learn how to manage your ADHD in community! Sign up by semseter or the year long program. Neque labore totam dolores.
+ - heading: AMM
+   description: The Acomplished Mind Method! Mini Course for Transformational Growth! - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque labore totam dolores.
+
 ---
 
-{% include header-nav.html %}
+{% include header-nav.html  %}
 
 <!------ Main Banner ------->
 
@@ -41,40 +49,34 @@ title: Homepage
 <!--- Fixed Banner-->   
 <section class="banner grid-center fixed ">
     <div class="col-4-middle center">
-      <h2 class="big-bold">What is <span class="featured-text">ADHD? </span></h2>
+      <h2 class="big-bold">What is <span class="blue-text">ADHD? </span></h2>
       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, at dignissimos adipisci aliquam beatae eligendi quam ab quis, sit rem pariatur! Odit nam officia nostrum dolor ullam in voluptatem cumque! </p>
     </div>
   </section> 
 
 <!------ Offers icon Grid  ------->
-    <section class="padded grid-spaceBetween bg-dark">
-        <div class="padded-sm margin-b col-12 center">
-            <h2> work with me!</h2>
+    <section class="padded grid-center bg-dark">
+        <div class="padded-sm col-12 center">
+            <h2> WORK WITH ME </h2>
         </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fa-regular fa-user icon"></i>
-            <p class="left editable">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eligendi nulla accusantium alias sequi provident nisi maxime inventore, sed dolorem doloribus incidunt iste voluptatibus recusandae voluptate! Ad nam perspiciatis officia!
-            </p>
+
+        {% for item in page.offers %}
+        <div class="padded-sm col-3_sm-6 xxs-stack editable">
+            <h4 class="center font-normal blue-text text-shadow">{{item.heading}}</h4>
+            <p> {{item.description}} </p> 
         </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fa-solid fa-laptop icon med-text "></i>
-            <p class="left editable">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eligendi nulla accusantium alias sequi provident nisi maxime inventore, sed dolorem doloribus incidunt iste voluptatibus recusandae voluptate! Ad nam perspiciatis officia!
-            </p>
-        </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fa-solid fa-seedling icon "></i>
-            <p class="left editable">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eligendi nulla accusantium alias sequi provident nisi maxime inventore, sed dolorem doloribus incidunt iste voluptatibus recusandae voluptate! Ad nam perspiciatis officia!
-            </p>
-        </div>
+
+        {% endfor %}
+        <div class="col-12 center padded-2 padded-b-0 ">
+            <a href="/contact.html" class="button center caps"> Let's Chat! </a> 
+         </div>
+
     </section>
 
 <!------ Call to action Banner ------->
 <section class="center padded bg-featured">
-    <h3 class="editable"> Free Mini Master Class </h3>
-    <p class="editable"> Your business won't grow with any new strategies. Your business grows when you change the person running the business. Because the person running the business is the one driving the strategies. If strategies worked EVERYONE would have a thriving business and everyone who used the strategies wouldn't procrastinate anymore... If strategies worked - you wouldn't be dealing with procrastination still.</p>
+    <h3 class="editable margin-b-2"> Free Mini Master Class </h3>
+    <p class="editable margin-b-2"> Your business won't grow with any new strategies. Your business grows when you change the person running the business. Because the person running the business is the one driving the strategies. If strategies worked EVERYONE would have a thriving business and everyone who used the strategies wouldn't procrastinate anymore... If strategies worked - you wouldn't be dealing with procrastination still.</p>
     <h4 class="editable">Get The Ultimate Hack to Ditch Procrastination and Grow your Business.</h4>
   
     <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
