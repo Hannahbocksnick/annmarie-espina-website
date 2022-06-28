@@ -261,7 +261,7 @@ a:hover{ color: #799EEE; }
 
 /* Main home page Banner styles ---------------- */
 
-.header-banner {background-image:url('/images/annmarie-bike.JPG');
+.header-banner {background-image:url('/images/annmarie-bike.jpg');
     background-size: cover; 
   	background-position:center; 
   	background-repeat: no-repeat;}
@@ -434,24 +434,17 @@ hr {
 }
 
 
-/*.button {
-    
-width: 130px;
-height: 40px;
-    border-radius: 5px;
-    display: inline-block;
-    text-transform: uppercase;
-    color:#A8C0F5;
-    margin: 2rem;
-    padding: 10px 25px;
-    font-size: 1.7rem;
-    font-family: 'Oswald', sans-serif;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-}
-/*
+/* Slider Styles */
 
+.slider-container {
+  padding: 5%;
+  border: 2px solid lightblue;
+}
+
+.slider-item {
+  padding: 1rem;
+  border: 2px solid orange;
+}
        
               
 /* this is a line element */
@@ -575,23 +568,29 @@ form .button {
   left: 0;
   right: 0;
   z-index:1;
+  font-size:2rem;
 }
 
 .mobile-menu a{
   display:block;
   padding: 5vh 5%;
   font-weight: normal;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
-.mobile-menu a:hover{
-  color:#363636;
-}
+.mobile-menu a:hover{ 
+  display: block;
+  color:#799EEE;
+  font-size: 1.2rem;}
 
 .hamburger-button {
   position: relative;
   z-index: 2;
   cursor: pointer;
+  padding: 0.5rem;
+  color: #799EEE;
+  font-size: 2rem;
+  
 }
 
 .hamburger-button i {
@@ -599,13 +598,15 @@ form .button {
   margin-bottom:0;
 }
 
-.hamburger-button.active{color:white;}
+.hamburger-button.active{color:white;
+  text-align: right;
+}
 
 /* ------------------------ General CSS Responsive Styles (Apply everywhere unless overridden) ------------------------ */ 
 
 .show-xs, 
 .show-sm,
-.show-md
+.show-md,
 .mobile-menu {
 	display: none;
 }
