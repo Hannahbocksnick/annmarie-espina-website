@@ -231,6 +231,7 @@ a:hover{ color: #799EEE; }
 .font-normal     {font-weight:normal;}
 .font-extra-bold {font-weight: 800;}
 .big-text        {font-size: 4rem;}
+.lg-text       {font-size: 3rem;}
 .med-text        {font-size: 2rem;
                   line-height:1.4;}
 .small-text{ 
@@ -278,6 +279,18 @@ a:hover{ color: #799EEE; }
     font-weight: 400;
 }
 
+/* Banner ------------*/
+
+.ammbanner{
+  background-image: url('/images/AnnMarie-14.jpg');
+  background-size: cover;
+  background-position: left;
+  min-height: 70vh;
+}
+
+.textbox {
+  background-color: rgb(240, 240, 245,0.8);
+}
 
 /*icon Section---------------------------*/
 
